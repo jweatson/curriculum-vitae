@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\name{Joseph Eatson} % Your name
+\address{17 Stanmore Avenue \\ Leeds \\ West Yorkshire \\ United Kingdom \\ LS4 2RP}
+\address{\href{mailto:py13je@leeds.ac.uk}{py13je@leeds.ac.uk} \\ \href{mailto:jweatson@gmail.com}{jweatson@gmail.com} \\ they/he}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Leeds} \dotfill {\bf \em 2013-2022} \\ 
+Ph.D. in Astrophysics - {\em Numerical Simulations of Dusty Colliding Wind Binaries} \dotfill In Progress \\
+BSc \& MPhys in Physics \& Astrophysics \dotfill 2:1
+
+{\bf Enfield Grammar School} \dotfill {\bf \em 2006-2013} \\
+A-Levels \dotfill A in History \& Mathematics, B in Physics \\
+GCSEs \dotfill 13, with 6 A-grade
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Projects}
+
+\begin{rSubsection}{Numerical Simulations of Dusty Colliding Wind Binaries}{\href{https://raw.githubusercontent.com/atomsite/Thesis/master/Thesis.pdf}{Thesis}}{Ph.D. Research Project - University of Leeds}{2017-2022}
+\item Creation of highly performant numerical code for performing fluid dynamics simulations of Colliding Wind Binary systems.
+\item Extensive modification to existing Athena++ hydrodynamical code.
+\item Performed parameter space exploration on requirements for dust formation in Colliding Wind Binary Systems.
+\item Simulations on observed systems such as WR98a, WR104 and WR140 performed, with particular interest in impact of orbital eccentricity on dust formation rates. 
+\item Novel passive scalar model for simulating dust growth, destruction and cooling within a numerical simulation.
+\end{rSubsection}
+
+\begin{rSubsection}{A Comedy of Uncertainties - Mapping Stellar Clusters Using Spatial \& Multi-Stage Sub-Clustering Methods}{\href{https://raw.githubusercontent.com/atomsite/masters-project/main/masters-report.pdf}{Project Report}}{MPhys Research Project - University of Leeds}{2016-2017}
+\item Experimentation with sub-clustering methods for application in open clusters and OB associations.
+\item Used R statistical language to perform sub-clustering.
+\item Results were promising, but subject to additional data from GAIA satellite that was not available until after submission.
+\end{rSubsection}
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+
+{\bf Teaching} \dotfill 5 years teaching \& assessing lab skills and Python to undergraduates \\
+{\bf Fluent Programming Languages} \dotfill C, C++, Python 2.7-3.9, R \\
+{\bf Additional Programming Languages} \dotfill Fortran90, Julia, Rust \\
+{\bf Libraries \& APIs} \dotfill OpenMP, OpenMPI, Numba, Cython \\
+{\bf Practical Knowledge} \dotfill Telescope operation, server \& \\
+{\bf Tools \& Environments} \dotfill VSCode, RStudio, GNUPlot, Athena++, SGE, \LaTeX \\
+{\bf Programming Strengths} \dotfill Highly-optimised, multi-threaded code for use in HPC environments
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

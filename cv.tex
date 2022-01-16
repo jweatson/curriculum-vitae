@@ -8,6 +8,7 @@
 %
 % Original author:
 % Trey Hunner (http://www.treyhunner.com/)
+% Heavy modification by Joseph Eatson
 %
 % Important note:
 % This template requires the resume.cls file to be in the same directory as the
@@ -16,75 +17,95 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-
+\usepackage[a4paper,left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=cyan,
-    pdftitle={Overleaf Example},
+    pdftitle={Joseph Eatson CV},
     pdfpagemode=FullScreen,
     }
 
+% Personal details
 \name{Joseph Eatson} % Your name
-\address{17 Stanmore Avenue \\ Leeds \\ West Yorkshire \\ United Kingdom \\ LS4 2RP}
-\address{\href{mailto:py13je@leeds.ac.uk}{py13je@leeds.ac.uk} \\ \href{mailto:jweatson@gmail.com}{jweatson@gmail.com} \\ they/he}
+\address{17 Stanmore Avenue \\ Leeds \\ United Kingdom \\ LS4 2RP}
+\address{\texttt{\href{mailto:py13je@leeds.ac.uk}{py13je@leeds.ac.uk}} \\ \texttt{\href{mailto:jweatson@gmail.com}{jweatson@gmail.com}} \\ They/He}
+
+% Begin document
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
+% Education section, covering university and secondary education down to GCSE level
 \begin{rSection}{Education}
 
-{\bf University of Leeds} \dotfill {\bf \em 2013-2022} \\ 
-Ph.D. in Astrophysics - {\em Numerical Simulations of Dusty Colliding Wind Binaries} \dotfill In Progress \\
-BSc \& MPhys in Physics \& Astrophysics \dotfill 2:1
+{\bf University of Leeds} \dotfill {\sl 2013-2022} \\ 
+Ph.D. in Astrophysics - {\em Numerical Simulations of Dusty Colliding Wind Binaries} \dotfill In progress \\
+MPhys in Physics \& Astrophysics \dotfill 2:1 \\
+BSc in Physics \dotfill 2:1
 
-{\bf Enfield Grammar School} \dotfill {\bf \em 2006-2013} \\
-A-Levels \dotfill A in History \& Mathematics, B in Physics \\
-GCSEs \dotfill 13, with 6 A-grade
+{\bf Enfield Grammar School} \dotfill {\sl 2006-2013} \\
+A Level \dotfill A in History \& Mathematics, B in Physics \\
+GCSE \dotfill 13 graded C or higher, with 6 graded A
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
+% Detail research projects, link to work when applicable
 \begin{rSection}{Research Projects}
 
-\begin{rSubsection}{Numerical Simulations of Dusty Colliding Wind Binaries}{\href{https://raw.githubusercontent.com/atomsite/Thesis/master/Thesis.pdf}{Thesis}}{Ph.D. Research Project - University of Leeds}{2017-2022}
-\item Creation of highly performant numerical code for performing fluid dynamics simulations of Colliding Wind Binary systems.
-\item Extensive modification to existing Athena++ hydrodynamical code.
-\item Performed parameter space exploration on requirements for dust formation in Colliding Wind Binary Systems.
-\item Simulations on observed systems such as WR98a, WR104 and WR140 performed, with particular interest in impact of orbital eccentricity on dust formation rates. 
-\item Novel passive scalar model for simulating dust growth, destruction and cooling within a numerical simulation.
+\begin{rSubsection}{Numerical Simulations of Dusty Colliding Wind Binaries}{\href{https://raw.githubusercontent.com/atomsite/Thesis/master/Thesis.pdf}{Thesis - in progress}}{Ph.D. Research Project - University of Leeds}{2017-2022}
+\item Project centred around the creation of a highly performant numerical code for performing analysis of dust formation in Colliding Wind Binary systems.
+\item Performed extensive modification to existing Athena++ and MG hydrodynamical codes to achieve this goal, co-ordination with developers of both projects, as well as general debugging and reporting.
+\item Performed parameter space exploration on requirements for dust formation in Colliding Wind Binary Systems, varying wind momentum ratio, cooling parameters and separation distance.
+\item Simulations on observed systems such as WR140 and $\eta$ Carinae performed, with particular focus on the impact of orbital eccentricity on dust formation rates.
+\item During this time developed a novel passive scalar model for simulating dust growth, destruction and cooling within a numerical simulation. Model is highly extensible and potentially applicable to a range of other hydrodynamical codes.
 \end{rSubsection}
 
-\begin{rSubsection}{A Comedy of Uncertainties - Mapping Stellar Clusters Using Spatial \& Multi-Stage Sub-Clustering Methods}{\href{https://raw.githubusercontent.com/atomsite/masters-project/main/masters-report.pdf}{Project Report}}{MPhys Research Project - University of Leeds}{2016-2017}
+\begin{rSubsection}{\textit{A Comedy of Uncertainties} - Mapping Stellar Clusters Using Spatial \& Multi-Stage Sub-Clustering Methods}{\href{https://raw.githubusercontent.com/atomsite/masters-project/main/masters-report.pdf}{Project Report}}{MPhys Research Project - University of Leeds}{2016-2017}
 \item Experimentation with sub-clustering methods for application in open clusters and OB associations.
-\item Used R statistical language to perform sub-clustering.
-\item Results were promising, but subject to additional data from GAIA satellite that was not available until after submission.
+\item Used the R statistical language to perform sub-clustering, provisional parallax data from Hipparcos-Gaia catalog was used to map stellar clusters in 3D, with the long-term goal of resolving kinematics.
+\item Initial results were promising, but conclusive results were dependent on 2\textsuperscript{nd} Gaia data release that was not available until a year after project submission.
 \end{rSubsection}
-
 
 \end{rSection}
 
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
+% Detail skills, mainly computing and research
 \begin{rSection}{Skills}
 
+\begin{rPoints}{Programming}
+	\item Significant experience in several programming languages, from statistical languages such as Python, R and Julia, to low-level systems development languages such as C, C++, Fortran90 and Rust.
+	\item Particularly fluent in C, C++, Python and R, having more than 6 years of daily usage of each language.
+	\item Writes lean, well-documented code on-time with an emphasis on readability and parallel performance.
+	\item Experience in modern development techniques and version control systems such as Git and Mercurial.
+	\item Ph.D. required the understanding of HPC concepts such as shared memory and message passing parallelism, in particular the OpenMPI and OpenMP libraries.
+	\item Familiar with other HPC concepts such as GPGPU accelerators, and have written programmes using CUDA for personal projects.
+	\item Daily usage of IDEs such as Spyder, Rstudio, JuPyter and VSCode.
+\end{rPoints}
+
+\begin{rPoints}{Research Skills}
+	\item High degree of knowledge in writing academic papers for peer review.
+	\item Familiarity with modern documentation and static analysis methods such as Doxygen.
+	\item Very proficient in the \LaTeX \,typesetting language as well as the Bib\TeX\, and Bib\LaTeX \,citation formats.
+	\item Quick study for new concepts and technical jargon.
+	\item Postgraduate level background in physics \& mathematics, IOP-accredited degree in astrophysics, with additional knowledge in numerical methods, fluid dynamics, quantum computing and computer science.
+\end{rPoints}
+
+\begin{rPoints}{Computing}
+	\item Extreme proficiency with all operating systems and desktop environments, with years of experience in Windows, MacOS \& multiple Linux distributions.
+	\item Personal experience in server maintenance and network management, as well as general technical support, typically the first point of call for most people in my department with a computing issue.
+	\item Proficiency in office suites such as Microsoft Office, iWork and Google Workspace, as well as their open source counterparts.
+\end{rPoints}
+
+\begin{rPoints}{Teaching \& Collaboration}
+	\item Experience teaching students in a wide range of age groups, from primary school to university level.
+	\item Able to write, explain and defend concepts clearly and concisely to audiences ranging from students to seniors, educators to executives.
+	\item Proficient in teams of any size, I work well with others, and above all else pride myself in being an asset to those that I work with.
+\end{rPoints}
+
+\end{rSection}
+
+% Skills section, but in brief, cover additional things that don't require a bullet point
+\begin{rSection}{Overview}
 
 {\bf Teaching} \dotfill 5 years teaching \& assessing lab skills and Python to undergraduates \\
 {\bf Fluent Programming Languages} \dotfill C, C++, Python 2.7-3.9, R \\
@@ -96,16 +117,15 @@ GCSEs \dotfill 13, with 6 A-grade
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
+% Final section on references
+\begin{rSection}{References}
+	{\bf Dr. Julian Pittard} \dotfill {\sl Ph.D. supervisor - University of Leeds} \\
+	\null\dotfill 0113 343 3805, \texttt{\href{mailto:J.M.Pittard@leeds.ac.uk}{J.M.Pittard@leeds.ac.uk}} \\ 
+	{\bf Dr. Stuart Lumsden} \dotfill {\sl Masters project supervisor - University of Leeds} \\
+	\null\dotfill 0113 343 6691, \texttt{\href{mailto:S.L.Lumsden@leeds.ac.uk}{S.L.Lumsden@leeds.ac.uk}} \\ 
+%	{\bf Mr. Charles Irvine} \dotfill {\sl Previous employer - Questions of Difference Ltd.} \\
+%	\null\dotfill \texttt{\href{mailto:charles@questionsofdifference.com}{charles@questionsofdifference.com}} \\ 
+\end{rSection}
 
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
-
+% Finish up, hopefully this compiles!
 \end{document}

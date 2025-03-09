@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+% Some modification by Joseph Eatson
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[a4paper,left=2.5cm,top=2cm,right=2.5cm,bottom=2cm]{geometry} % Document margins
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Joseph Eatson CV},
+    pdfpagemode=FullScreen,
+    }
+
+% Personal details
+\name{Joseph Eatson} % Your name
+\address{Hicks Building \\ Hounsfield Road \\ Sheffield \\ S3 7RH \\ United Kingdom}
+\address{\texttt{\href{mailto:j.w.eatson@sheffield.ac.uk}{j.w.eatson@sheffield.ac.uk}} \\  \texttt{\href{https://orcid.org/0000-0002-5160-8871}{ORCID:0000-0002-5160-8871}}}
+\address{University of Sheffield \\ School of Mathematical \& Physical Sciences}
+
+% Hicks Building, Hounsfield Rd, Broomhall, Sheffield S3 7RH
+
+
+% Begin document
+\begin{document}
+
+\begin{rSection}{Research Experience}
+	
+	\begin{rPoints}{Postdoctoral Researcher, University of Sheffield (2022--2025)}
+		\item Investigating the influence of Short-Lived Radioisotopes (SLRs) on star-forming regions, protoplanetary disks and planetesimals through numerical simulations.
+		\item Planetesimals are simulated to determine the effect of varying levels of SLR enrichment on final planet volatile content, star-forming regions are simulated to determine the likelihood of enrichment levels.
+		\item Star-forming regions and disks are simulated via $N$-body simulations, planetesimals are simulated via a grid-based fluid dynamics and geodynamics model.
+		\item Research into water retention after planetesimal heating, and how this affects water content of exoplanets, as well as formation of the solar system.
+		\item Current and future work focussed on developing a new open-source multi-fluid geodynamical model as part of an international collaboration with the Forming Worlds Lab, which aims to implement out-gassing, fluid flow, pebble accretion and percolation for a comprehensive planetesimal model. 
+		\item Further research into a less conventional SLR enrichment route, AGB ``interlopers'' is also being performed.
+		\item Initial results suggest that the solar system is relatively highly enriched, however, conventional mechanisms for enrichment have difficulty explaining $^{60}$Fe enrichment without being extremely proximal to supernovae, hence importance of AGB ``interlopers''. 
+	\end{rPoints}
+	\begin{rPoints}{PhD Research, University of Leeds (2017--2022)}
+		\item Investigated the formation of dust within Colliding Wind Binary (CWB) systems.
+		\item Simulating these systems had significant computational and physical challenges, such as the need for extremely large 3-D grids, cooling through dust and plasma emission, and the complexity of simulating highly unstable winds and shocks.
+		\item Significant modification of the fluid dynamics code Athena++ performed to achieve this, which was run on the Leeds ARC 4 HPC system.
+		\item Simulations performed using a passive scalar dust model included in very large-scale 3D hydrodynamical simulations of CWBs to hundreds of AU.
+		\item Results suggested that dust production within the post-shock region of the wind collision region could result in significant quantities of dust being produced, with favourable density and temperature conditions after cooling.
+	\end{rPoints}
+\end{rSection}
+
+\begin{rSection}{Relevant research skills}
+	\begin{rPoints}{}
+		\item Research background in star formation, planet formation, early-type stellar winds, planetesimals and star forming regions.
+		\item Comprehensive knowledge of multiple programming languages, in particular 8 years of experience in C, C++, Python, and R -- and 4 years of experience using Rust, Fortran and Julia.
+		\item 8 years programming experience with high-performance compute systems, experience in writing efficient, highly parallel code, experience in utilising HPC clusters and GPU acceleration.
+		\item Familiarity in using and writing extensions for scientific computing projects such as {AMUSE} and {Athena++}.
+		\item Experience running and analysing the results of fluid dynamics models.
+		\item Experience with writing well-documented code and using version control software such as {Git} for open-source projects.
+		\item Highly self-motivated researcher, have written multiple papers as first author, handling the majority of the research, writing and feedback from peer review. 
+		\item 4 years experience teaching hands-on lab experiments and computing workshops to undergraduate students, as well as assessing and grading practical work.
+	\end{rPoints}
+\end{rSection}
+
+\begin{rSection}{Education}
+	\begin{rPoints}{University of Leeds (2017--2022)}
+		\item Astrophysics PhD -- {\sl Numerical Simulations of Dusty Colliding Wind Binaries}
+		\item Date of award -- {21\textsuperscript{st} of November 2022} 
+	\end{rPoints}
+	\begin{rPoints}{University of Leeds (2013--2017)}
+		\item {Master of Physics} -- {with merit}
+		\item {Bachelor of Science} -- {2.1}
+		\item Date of award -- {30\textsuperscript{th} of June 2017}
+	\end{rPoints}
+	\begin{rPoints}{Enfield Grammar School (2006-2013)}
+		\item A-levels in Mathematics (A), Physics (B) \& History (A)
+		\item 13 GCSEs
+	\end{rPoints}
+\end{rSection}
+
+\begin{rSection}{References}
+	{\textbf{Dr. Richard Parker} \hfill \textsl{School of Mathematical \& Physical Sciences, University of Sheffield}} \\
+	{\hspace*{0pt}\hfill \texttt{+44 114 222 3560}, \texttt{\href{mailto:r.parker@sheffield.ac.uk}{r.parker@sheffield.ac.uk}}} \\
+	% {\textbf{Dr. Tim Lichtenberg} \hfill \textsl{Faculty of Science and Engineering, University of Groningen}} \\ 
+	% {\hspace*{0pt}\hfill {+31 50 36 34073}, {\href{mailto:tim.lichtenberg@rug.nl}{tim.lichtenberg@rug.nl}}} \\ 
+	{\textbf{Prof. Julian Pittard} \hfill \textsl{School of Physics \& Astronomy, University of Leeds}} \\
+	{\hspace*{0pt}\hfill \texttt{+44 113 343 3805}, \texttt{\href{mailto:j.m.pittard@leeds.ac.uk}{j.m.pittard@leeds.ac.uk}}}
+\end{rSection}
+
+\begin{rSection}{Publications}
+	\begin{rPoints}{Papers}
+		\item {Eatson, Parker \& Lichtenberg, 2024, ApJ} -- {\href{https://iopscience.iop.org/article/10.3847/1538-4357/ad8642}{\sl Towards a unified injection model of short-lived radioisotopes in $N$-body simulations of star-forming regions}}
+		\item {Eatson, Lichtenberg, Parker \& Gerya, 2024, MNRAS} -- \href{https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.6619E/abstract}{\sl Devolatilization of extrasolar planetesimals by \textsuperscript{60}Fe and \textsuperscript{26}Al heating} 
+		\item {Eatson, Pittard \& Van Loo, 2022, MNRAS} -- {\href{https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.4705E/abstract}{\sl Exploring dust growth in the episodic WCd system WR140}}
+		\item {Eatson, Pittard \& Van Loo, 2022, MNRAS} -- {\sl \href{https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.6132E/abstract}{An exploration of dust grain growth within WCd systems using an advected scalar dust model}}
+	\end{rPoints}
+	\begin{rPoints}{Conferences}
+		\item {Talk: \sl Heating of planetesimals from \textsuperscript{60}Fe \& \textsuperscript{26}Al and the effect on the water content of protoplanets} -- External Irradiated Disks, Royal Society, London, UK, 2024
+		\item {Poster: \sl Planetesimal heating from the SLRs \textsuperscript{60}Fe \& \textsuperscript{26}Al} -- Rocky Worlds III, Z{\"u}rich, Switzerland, 2024
+		\item Poster: {\sl Devolatilization of extrasolar planetesimals by \textsuperscript{60}Fe and \textsuperscript{26}Al heating} --  Protostars \& Planets VII, Kyoto, Japan, 2023
+	\end{rPoints}
+	\begin{rPoints}{Other}
+		\item {Doctoral thesis -- \href{https://etheses.whiterose.ac.uk/32292/}{\sl Numerical simulations of dusty Colliding Wind Binaries}} 
+	\end{rPoints}
+\end{rSection}
+
+% Education section, covering university and secondary education down to GCSE level
+% \begin{rSection}{Education}
+
+% {\bf University of Leeds} \dotfill {\sl 2013-2022} \\ 
+% Ph.D. in Astrophysics - {\em Numerical Simulations of Dusty Colliding Wind Binaries} \dotfill In progress \\
+% MPhys in Physics \& Astrophysics \dotfill 2:1 \\
+% BSc in Physics \dotfill 2:1
+
+% {\bf Enfield Grammar School} \dotfill {\sl 2006-2013} \\
+% A Level \dotfill A in History \& Mathematics, B in Physics \\
+% GCSE \dotfill 13 graded C or higher, with 6 graded A
+
+% \end{rSection}
+
+% % Detail research projects, link to work when applicable
+% \begin{rSection}{Research Projects}
+
+% \begin{rSubsection}{Numerical Simulations of Dusty Colliding Wind Binaries}{\href{https://raw.githubusercontent.com/atomsite/Thesis/master/Thesis.pdf}{Thesis - in progress}}{Ph.D. Research Project - University of Leeds}{2017-2022}
+% \item Project centred around the creation of a highly performant numerical code for performing analysis of dust formation in Colliding Wind Binary systems.
+% \item Performed extensive modification to existing Athena++ and MG hydrodynamical codes to achieve this goal, co-ordination with developers of both projects, as well as general debugging and reporting.
+% \item Performed parameter space exploration on requirements for dust formation in Colliding Wind Binary Systems, varying wind momentum ratio, cooling parameters and separation distance.
+% \item Simulations on observed systems such as WR140 and $\eta$ Carinae performed, with particular focus on the impact of orbital eccentricity on dust formation rates.
+% \item During this time developed a novel passive scalar model for simulating dust growth, destruction and cooling within a numerical simulation. Model is highly extensible and potentially applicable to a range of other hydrodynamical codes.
+% \end{rSubsection}
+
+% \begin{rSubsection}{\textit{A Comedy of Uncertainties} - Mapping Stellar Clusters Using Spatial \& Multi-Stage Sub-Clustering Methods}{\href{https://raw.githubusercontent.com/atomsite/masters-project/main/masters-report.pdf}{Project Report}}{MPhys Research Project - University of Leeds}{2016-2017}
+% \item Experimentation with sub-clustering methods for application in open clusters and OB associations.
+% \item Used the R statistical language to perform sub-clustering, provisional parallax data from Hipparcos-Gaia catalog was used to map stellar clusters in 3D, with the long-term goal of resolving kinematics.
+% \item Initial results were promising, but conclusive results were dependent on 2\textsuperscript{nd} Gaia data release that was not available until a year after project submission.
+% \end{rSubsection}
+
+% \end{rSection}
+
+% % Detail skills, mainly computing and research
+% \begin{rSection}{Skills}
+
+% \begin{rPoints}{Programming}
+% 	\item Significant experience in several programming languages, from statistical languages such as Python, R and Julia, to low-level systems development languages such as C, C++, Fortran90 and Rust.
+% 	\item Particularly fluent in C, C++, Python and R, having more than 6 years of daily usage of each language.
+% 	\item Writes lean, well-documented code on-time with an emphasis on readability and parallel performance.
+% 	\item Experience in modern development techniques and version control systems such as Git and Mercurial.
+% 	\item Ph.D. required the understanding of HPC concepts such as shared memory and message passing parallelism, in particular the OpenMPI and OpenMP libraries.
+% 	\item Familiar with other HPC concepts such as GPGPU accelerators, and have written programmes using CUDA for personal projects.
+% 	\item Daily usage of IDEs such as Spyder, Rstudio, JuPyter and VSCode.
+% \end{rPoints}
+
+% \begin{rPoints}{Research Skills}
+% 	\item High degree of knowledge in writing academic papers for peer review.
+% 	\item Familiarity with modern documentation and static analysis methods such as Doxygen.
+% 	\item Very proficient in the \LaTeX \,typesetting language as well as the Bib\TeX\, and Bib\LaTeX \,citation formats.
+% 	\item Quick study for new concepts and technical jargon.
+% 	\item Postgraduate level background in physics \& mathematics, IOP-accredited degree in astrophysics, with additional knowledge in numerical methods, fluid dynamics, quantum computing and computer science.
+% \end{rPoints}
+
+% \begin{rPoints}{Computing}
+% 	\item Extreme proficiency with all operating systems and desktop environments, with years of experience in Windows, MacOS \& multiple Linux distributions.
+% 	\item Personal experience in server maintenance and network management, as well as general technical support, typically the first point of call for most people in my department with a computing issue.
+% 	\item Proficiency in office suites such as Microsoft Office, iWork and Google Workspace, as well as their open source counterparts.
+% \end{rPoints}
+
+% \begin{rPoints}{Teaching \& Collaboration}
+% 	\item Experience teaching students in a wide range of age groups, from primary school to university level.
+% 	\item Able to write, explain and defend concepts clearly and concisely to audiences ranging from students to seniors, educators to executives.
+% 	\item Proficient in teams of any size, I work well with others, and above all else pride myself in being an asset to those that I work with.
+% \end{rPoints}
+
+% \end{rSection}
+
+% % Skills section, but in brief, cover additional things that don't require a bullet point
+% \begin{rSection}{Overview}
+
+% {\bf Teaching} \dotfill 5 years teaching \& assessing lab skills and Python to undergraduates \\
+% {\bf Fluent Programming Languages} \dotfill C, C++, Python 2.7-3.9, R \\
+% {\bf Additional Programming Languages} \dotfill Fortran90, Julia, Rust \\
+% {\bf Libraries \& APIs} \dotfill OpenMP, OpenMPI, Numba, Cython \\
+% {\bf Practical Knowledge} \dotfill Telescope operation, server maintenance \\
+% {\bf Tools \& Environments} \dotfill VSCode, JuPyter, RStudio, GNUPlot, Athena++, SGE, \LaTeX \\
+% {\bf Programming Strengths} \dotfill Highly-optimised, multi-threaded code for use in HPC environments
+
+% \end{rSection}
+
+% % Final section on references
+% \begin{rSection}{References}
+% 	{\bf Dr. Julian Pittard} \dotfill {\sl Ph.D. supervisor - University of Leeds} \\
+% 	\null\dotfill 0113 343 3805, {\href{mailto:J.M.Pittard@leeds.ac.uk}{J.M.Pittard@leeds.ac.uk}} \\ 
+% 	{\bf Dr. Stuart Lumsden} \dotfill {\sl Masters project supervisor - University of Leeds} \\
+% 	\null\dotfill 0113 343 6691, {\href{mailto:S.L.Lumsden@leeds.ac.uk}{S.L.Lumsden@leeds.ac.uk}} \\ 
+% %	{\bf Mr. Charles Irvine} \dotfill {\sl Previous employer - Questions of Difference Ltd.} \\
+% %	\null\dotfill {\href{mailto:charles@questionsofdifference.com}{charles@questionsofdifference.com}} \\ 
+% \end{rSection}
+
+% Finish up, hopefully this compiles!
+\end{document}
